@@ -28,6 +28,7 @@ In our code we are using multiple parenthesis``` ()``` , brackets``` []``` , a c
 ```([^\\s]+(\\.(?i)(jpe?g|png|gif|bmp))$)``` 
 
 ### Anchors
+The final part before our closing parenthesis is the dollar sign ```$```. This declares the end of our string is where our file extension needs to exist. This is mandatory in order for it to become a valid file name and type.
 
 ### Quantifiers
 
