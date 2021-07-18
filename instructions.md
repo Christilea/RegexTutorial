@@ -29,6 +29,15 @@ In our code we are using multiple parenthesis``` ()``` , brackets``` []``` , a c
 
 ### Anchors
 The final part before our closing parenthesis is the dollar sign ```$```. This declares the end of our string is where our file extension needs to exist. This is mandatory in order for it to become a valid file name and type.
+Some anchors include:
+
+- \G: defines the starting point of a search; useful along with the /g flag
+- \A: matches the start of a string
+- \Z: matches the end of a string
+- \z: similar to \Z, but the main difference is that it will not match before a trailing newline at the end of a string
+- \b: used to match a word matched by \w and a word not matched by \w
+- \B: used to match the position between characters matched by \w
+
 
 ### Quantifiers
 
