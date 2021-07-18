@@ -41,6 +41,39 @@ Some anchors include:
 
 ### Quantifiers
 
+<table>
+<tr>
+<td>Quantifier</td>
+<td>Meaning</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>O or more</td>
+</tr>
+<tr>
+<td><code>+</code></td>
+<td>1 or more</td>
+</tr>
+<tr>
+<td><code>?</code></td>
+<td>O or 1</td>
+</tr>
+<tr>
+<td><code>{3}</code></td>
+<td>Exactly 3</td>
+</tr>
+<tr>
+<tr>
+<td><code>{3,}</code></td>
+<td>3 or more</td>
+</tr>
+<tr>
+<td><code>{3,5}</code></td>
+<td>3, 4 or 5</td>
+</tr>
+<tr>
+</table>
+
 ### Grouping Constructs
 Groups are quantified by parenthesis ```()```. Here we are wrapping our entire expression in a group, but first we group inside the main part of our expression what we need to eliminate (white space) as well as our rules to determine at least one one character is being used. Finally we group our evaluator to determine that in-fact our filetype is proceeded with a period, followed by a proper extension type.
 
@@ -57,3 +90,6 @@ Groups are quantified by parenthesis ```()```. Here we are wrapping our entire e
 ## Author
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+# References
+
+* [Regular Expressions cheat sheet](http://web.mit.edu/hackl/www/lab/turkshop/slides/regex-cheatsheet.pdf)
