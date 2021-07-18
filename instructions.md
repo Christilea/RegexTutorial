@@ -32,6 +32,7 @@ In our code we are using multiple parenthesis``` ()``` , brackets``` []``` , a c
 ### Quantifiers
 
 ### Grouping Constructs
+Groups are quantified by parenthesis ```()```. Here we are wrapping our entire expression in a group, but first we group inside the main part of our expression what we need to eliminate (white space) as well as our rules to determine at least one one character is being used. Finally we group our evaluator to determine that in-fact our filetype is proceeded with a period, followed by a proper extension type.
 
 ### Bracket Expressions
 
