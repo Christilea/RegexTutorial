@@ -23,7 +23,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
   - [Author](#author)
 ## Regex Components
 
-In our code we are using multiple parenthesis``` ()``` , brackets``` []``` , a caret``` ^``` , double backslashes``` \\``` , the letter s, the plus operator``` +``` , a period``` .``` , multiple question marks``` ?``` , the letter i, our file extension names``` jpe?g,png,gif,bmp``` , the pipe character``` |``` , and a dollar sign``` $```. By arranging these characters like they are below, we are telling the computer to perform our explicit task.
+Components in our code we are using multiple parenthesis``` ()``` , brackets``` []``` , a caret``` ^``` , double backslashes``` \\``` , the letter s, the plus operator``` +``` , a period``` .``` , multiple question marks``` ?``` , the letter i, our file extension names``` jpe?g,png,gif,bmp``` , the pipe character``` |``` , and a dollar sign``` $```. By arranging these characters like they are below, we are telling the computer to perform our explicit task.
 
 ```([^\\s]+(\\.(?i)(jpe?g|png|gif|bmp))$)``` 
 
@@ -80,12 +80,28 @@ Groups are quantified by parenthesis ```()```. Here we are wrapping our entire e
 ### Bracket Expressions
 
 ### Character Classes
+Character classes allow regular expressions to define a set of characters for finding a match within a given string. 
+
+Common Character Classes Include:
+- Positve and Negative Character Groups using Bracket Expressions (`[]`) (discussed above in Bracket Expressions)
+- Any Character - using the dot character (`.`) in a regex returns a wildcard character that matches any charcter except for \n, which is used to specify a new line. The bracket expression equivalent is: `[A-Za-z0-9_]`
+- Decimal Digit Character - using the slash and d characters (`\d`) matches any numeral digit. The bracket expression equivalent is: `[0-9]`.  Whereas using the slash and D characters (`\D`) matches a non-digit character.
+- Word Character - using the slash and w characters (`\w`) matches any alphanumeric character including the underscore.  The bracket expression equivalent is: `[A-Za-z0-9_]`. Whereas using the slash and W characters (`\W`) matches a non-word character.
+- Whitespace Character - using the slash and s characters (`\s`) matches a single whitespace character, including tabs and line breaks. Whereas using the slash and S characters (`\S`) matches a non-whitespace character.
 
 ### The OR Operator
 
 ### Flags
 
 ### Character Escapes
+They are used to treat strings of characters in regular expressions as literals. The most common character escapes include "\r" for carriage return, "\n" for new line, "\v" for vertical tab, "\t" for a tab, "\f" for form feed, and "\xNN" for hexadecimal numbers. It also includes the classes discussed in the [Character Classes](#character-classes) section, namely:
+
+- \d: used to specify a class composed of digit characters
+- \D: used to specify a class of characters that is not composed of digits
+- \w: used to specify a sequence of characters, or a word
+- \W: used to specify a sequence of characters, except a word
+
+Character Escapes are useful when handling regular expressions in strings that already include the "\" or the "/" characters; for example, when evaluating strings representing files within folders, or URL addresses.
 
 ## Author
 
