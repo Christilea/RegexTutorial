@@ -1,6 +1,6 @@
 # Regex Tutorial 2021
 
-Introductory paragraph (replace this with your text)
+A regular expression is a special sequence of characters that describe a pattern of text that should be found, or matched, in a string or document. By matching text, we can identify how often and where certain pieces of text occur, as well as have the opportunity to replace or update these pieces of text if needed.
 
 ## Summary
 
@@ -105,7 +105,7 @@ Character Escapes are useful when handling regular expressions in strings that a
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+My name is Christi Lea. I am currently studying to be a software engineer. Here is my github link. [github.com/Christilea].
 # References
 
 * [Regular Expressions cheat sheet](http://web.mit.edu/hackl/www/lab/turkshop/slides/regex-cheatsheet.pdf)
