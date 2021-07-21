@@ -80,6 +80,10 @@ Groups are quantified by parenthesis ```()```. Here we are wrapping our entire e
 
 ### Bracket Expressions
 A bracket expression is either a matching list expression or a non-matching list expression. It consists of one or more expressions: ordinary characters, collating elements, collating symbols, equivalence classes, character classes, or range expressions.
+|Below is an example of the character uses|
+| ------------------------------------- |
+| /^(<b>&nbsp;[a-z0-9_\.-]&nbsp;</b>+)@(<b>&nbsp;[\da-z\.-]&nbsp;</b>+)\.(<b>&nbsp;[a-z\.]&nbsp;</b>{2,6})$/ |
+
 
 ### Character Classes
 Character classes allow regular expressions to define a set of characters for finding a match within a given string. 
