@@ -95,7 +95,8 @@ Common Character Classes Include:
 - Word Character - using the slash and w characters (`\w`) matches any alphanumeric character including the underscore.  The bracket expression equivalent is: `[A-Za-z0-9_]`. Whereas using the slash and W characters (`\W`) matches a non-word character.
 - Whitespace Character - using the slash and s characters (`\s`) matches a single whitespace character, including tabs and line breaks. Whereas using the slash and S characters (`\S`) matches a non-whitespace character.
   
-- |Below is an example of the character uses|
+|Below is an example of the character uses|
+
 | ------------------------------------- |
 | /^<b>&nbsp;(&nbsp;</b>[a-z0-9_\.-]+<b>&nbsp;)&nbsp;</b>@<b>&nbsp;(&nbsp;</b>[\da-z\.-]+<b>&nbsp;)&nbsp;</b>\.<b>&nbsp;(&nbsp;</b>[a-z\.]{2,6})$/ |
 
