@@ -4,7 +4,7 @@ A regular expression is a special sequence of characters that describe a pattern
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Regular expressions: Regular expressions operate by moving character by character, from left to right, through a piece of text. When the regular expression finds a character that matches the first piece of the expression, it looks to find a continuous sequence of matching characters.
 
 ## Table of Contents
 
@@ -78,6 +78,7 @@ Some anchors include:
 Groups are quantified by parenthesis ```()```. Here we are wrapping our entire expression in a group, but first we group inside the main part of our expression what we need to eliminate (white space) as well as our rules to determine at least one one character is being used. Finally we group our evaluator to determine that in-fact our filetype is proceeded with a period, followed by a proper extension type.
 
 ### Bracket Expressions
+A bracket expression is either a matching list expression or a non-matching list expression. It consists of one or more expressions: ordinary characters, collating elements, collating symbols, equivalence classes, character classes, or range expressions.
 
 ### Character Classes
 Character classes allow regular expressions to define a set of characters for finding a match within a given string. 
@@ -90,8 +91,15 @@ Common Character Classes Include:
 - Whitespace Character - using the slash and s characters (`\s`) matches a single whitespace character, including tabs and line breaks. Whereas using the slash and S characters (`\S`) matches a non-whitespace character.
 
 ### The OR Operator
+The Alternation Operator ( | or | )
+
+Alternatives match one of a choice of regular expressions: if you put the character(s) representing the alternation operator between any two regular expressions a and b , the result matches the union of the strings that a and b match.
 
 ### Flags
+A regex usually comes within this form /abc/, where the search pattern is delimited by two slash characters /. At the end we can specify a flag with these values (we can also combine them to each other):
+g (global) does not return after the first match, restarting the subsequent searches from the end of the previous match
+m (multi-line) when enabled ^ and $ will match the start and end of a line, instead of the whole string
+i (insensitive) makes the whole expression case-insensitive (for instance /aBc/i would match AbC)
 
 ### Character Escapes
 They are used to treat strings of characters in regular expressions as literals. The most common character escapes include "\r" for carriage return, "\n" for new line, "\v" for vertical tab, "\t" for a tab, "\f" for form feed, and "\xNN" for hexadecimal numbers. It also includes the classes discussed in the [Character Classes](#character-classes) section, namely:
@@ -104,7 +112,6 @@ They are used to treat strings of characters in regular expressions as literals.
 Character Escapes are useful when handling regular expressions in strings that already include the "\" or the "/" characters; for example, when evaluating strings representing files within folders, or URL addresses.
 
 ## Author
-
 My name is Christi Lea. I am currently studying to be a software engineer. Here is my github link. [github.com/Christilea].
 # References
 
