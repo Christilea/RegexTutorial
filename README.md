@@ -121,7 +121,7 @@ They are used to treat strings of characters in regular expressions as literals.
 Character Escapes are useful when handling regular expressions in strings that already include the "\" or the "/" characters; for example, when evaluating strings representing files within folders, or URL addresses.
 
 ## Author
-My name is Christi Lea. I am currently studying to be a software engineer. Here is my github link. [github.com/Christilea].
+My name is Christi Lea. I am currently studying to be a software engineer. Here is my github link. http://github.com/Christilea
 # References
 
 * [Regular Expressions cheat sheet](http://web.mit.edu/hackl/www/lab/turkshop/slides/regex-cheatsheet.pdf)
