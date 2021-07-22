@@ -23,7 +23,7 @@ Regular expressions: Regular expressions operate by moving character by characte
   - [Author](#author)
 ## Regex Components
 
-Components in our code we are using multiple parenthesis``` ()``` , brackets``` []``` , a caret``` ^``` , double backslashes``` \\``` , the letter s, the plus operator``` +``` , a period``` .``` , multiple question marks``` ?``` , the letter i, our file extension names``` jpe?g,png,gif,bmp``` , the pipe character``` |``` , and a dollar sign``` $```. By arranging these characters like they are below, we are telling the computer to perform our explicit task.
+Components in our code are using multiple parenthesis``` ()``` , brackets``` []``` , a caret``` ^``` , double backslashes``` \\``` , the letter s, the plus operator``` +``` , a period``` .``` , multiple question marks``` ?``` , the letter i, our file extension names``` jpe?g,png,gif,bmp``` , the pipe character``` |``` , and a dollar sign``` $```. By arranging these characters like they are below, we are telling the computer to perform our explicit task.
 
 ```([^\\s]+(\\.(?i)(jpe?g|png|gif|bmp))$)``` 
 
